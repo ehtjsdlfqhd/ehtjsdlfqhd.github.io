@@ -1,8 +1,25 @@
-body {
+#title {
+   
+    margin: 0 auto;
+    width: 950px;
+    height: 800px;
+    border: 2px solid #130f0f;
     text-align: center;
+    border-radius: 3%;
+}
+
+#title #le1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(to bottom, rgb(90 241 12), #91e75c, #032707);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 img {
     width: 300px;
+    height: 150px;
     border-radius: 50%;
 }
