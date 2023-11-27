@@ -5,17 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="../css/index.css">
+    
 </head>
 <body>
     <fieldset id="title">
         <legend id="le1">OSH's Homepage</legend>
-            <h>
-                <p id="le2">OSH's Homepage</p>
-            </h>
+            <div id="profile">
+                <span class="rk"><img src="images/profile_rocket.png" alt="프로필"></span>
+                <span class="star"><img src="images/profile_star.png" alt="별효과"></span>
+            </div>
             <div id="contents">
-                <span></span>
+                <ul id="conts">
+                    <li id="mypage">
+                        <a href="mypage.html"><img src="images/myself.png" alt="자기소개"></a>
+                        <span>About Me</span>
+                    </li>
+                    <li id="tour">
+                        <a href="tour.html"><img src="images/hobby.png" alt="취미"></a>
+                        <span>Hobby</span>
+                    </li>
+                    <li id="loadmap">
+                        <a href="roadmap.html"><img src="images/roadmap.png" alt="로드맵"></a>
+                        <span>Roadmap</span>
+                    </li>
+                    <li id="membership">
+                        <a href="membership.html"><img src="images/sign.png" alt="회원가입"></a>
+                        <span>Join</span>
+                    </li>
+                    <li id="members">
+                        <a href="members.html"><img src="images/members.png" alt="회원목록"></a>
+                        <span>Members</span>
+                    </li>
+                </ul>
             </div>
     </fieldset>
-    
+    <script src="js/index.js"></script>
 </body>
 </html>

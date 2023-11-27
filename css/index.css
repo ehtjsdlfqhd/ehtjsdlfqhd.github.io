@@ -8,19 +8,104 @@ html {
     height: 900px;
     border: 2px solid white;
     text-align: center;
-    border-radius: 3%;
+    border-radius: 20px;
+}
+
+#profile {
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+#profile span.rk img{
+    width: 200px;
+    height: 200px;
+    animation-name: rocket;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#profile span.star img{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 130px;
+    left: 250px;
+    filter: drop-shadow(3px 3px 2px white);
+    animation-name: stars;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
 }
 
 #title #le1 {
+    width: 600px;
     font-size: 50px;
     font-weight: bold;
     color: white;
     text-shadow: 3px 3px 10px greenyellow;
 }
 
-#contents {
-    margin: 300px auto 0 auto;
+ul#conts {
     width: 800px;
-    height: 400px;
-    border: 1px solid white;
+    margin : 200px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+}
+
+ul#conts li {
+    position: relative;
+    transition-duration: 1s;
+}
+
+ul#conts li img {
+    width: 90px;
+    height: 100px;
+}
+
+ul#conts li span {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+ul#conts li:first-child span {
+    left: 5px;
+}
+
+ul#conts li:nth-child(2) span {
+    left: 17px;
+}
+
+ul#conts li:nth-child(3) span {
+    left: 9px;
+}
+
+ul#conts li:nth-child(4) span {
+    left: 26px;
+}
+
+ul#conts li:last-child span {
+    left: 8px;
+}
+
+ul#conts li:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 10px greenyellow);
+    transform:translateY(-10px);
+}
+
+@keyframes rocket {
+    50% {transform: translate(0, 5px);}
+    100% {transform: translate(0, 0);}
+}
+
+@keyframes stars {
+    100% {transform: translate(-200px, 100px); opacity: 0; width: 50px; height: 50px;}
 }
