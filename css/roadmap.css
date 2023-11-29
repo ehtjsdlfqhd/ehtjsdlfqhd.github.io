@@ -1,3 +1,20 @@
 html {
     background-image: url("../images/background_space.jpg");
 }
+
+div#home_bt {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition-duration: 1s;
+}
+div#home_bt img {
+    width: 100px;
+    height: 100px;
+}
+
+div#home_bt:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 10px lightseagreen);
+    transform:translateY(-10px);
+}

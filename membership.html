@@ -5,8 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="css/membership.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <form>
+        <fieldset>
+            <legend>Join Us</legend>
+            <h2>간단한 회원가입으로 함께 해요</h2>
+            <table id="membership">
+                <tr>
+                    <td>ID</td>
+                    <label for="id"></label>
+                    <td><input type="text" name="id" id="id" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <label for="password"></label>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td>Password_checked</td>
+                    <label for="password_checked"></label>
+                    <td><input type="password" name="password_checked" id="password_checked" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <label for="email"></label>
+                    <td><input type="text" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <label for="gender"></label>
+                    <td><input type="text" name="gender" id="gender" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit" id="submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
     <div id="home_bt">
         <a href="index.html"><img src="images/home.png"></a>
     </div>
