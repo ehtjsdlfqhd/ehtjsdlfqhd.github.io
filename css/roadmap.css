@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Nanum+Gothic:wght@800&display=swap');
+
 html {
     background-image: url("../images/background_space.jpg");
+    background-size: cover;
+}
+
+h2 {
+    width: 500px;
+    height: 150px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 10px rosybrown;
+}
+
+h3 {
+    width: 600px;
+    height: 50px;
+    padding: 0;
+    margin: 20px 0 0 20px;
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 10px rosybrown;
+}
+
+div#contents {
+    margin: 50px auto;
+    width: 800px;
+    height: 1000px;
+    color: #fff;
+}
+
+div.main {
+    width: 700px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    margin: 20px 0 0 20px;
+}
+
+div.main ul li {
+    font-size: 30px;
+    list-style: none;
+}
+
+div.sub {
+    width: 700px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    margin: 20px 0 0 80px;
+}
+
+div.sub ul li {
+    font-size: 30px;
+    list-style: none;
+}
+
+div.future {
+    width: 700px;
+    height: 250px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+
+div.future ul li {
+    font-size: 30px;
+    list-style: none;
 }
 
 div#home_bt {
@@ -15,6 +89,6 @@ div#home_bt img {
 
 div#home_bt:hover {
     cursor: pointer;
-    filter: drop-shadow(3px 3px 10px lightseagreen);
+    filter: drop-shadow(3px 3px 10px rosybrown);
     transform:translateY(-10px);
 }

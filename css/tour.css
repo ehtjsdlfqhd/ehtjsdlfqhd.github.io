@@ -1,6 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Nanum+Gothic:wght@800&display=swap');
+
 html {
     background-image: url("../images/background_space.jpg");
+    background-size: cover;
 }
+
+h2 {
+    width: 500px;
+    height: 150px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 10px violet;
+}
+
+h3 {
+    text-shadow: 3px 3px 10px violet;
+    padding: 0; margin: 0;
+}
+
+p {
+    padding: 0; margin: 0;
+}
+
+div#contents {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+div#contents #wrap1 ul li {
+    width: 900px;
+    height: 200px;
+    position: relative;
+}
+
+div#contents #wrap1 ul li:nth-child(even) {
+    margin-left: 30px;
+}
+
+div#contents #wrap1 ul li:not(:first-child) {
+    margin-top: 50px;
+}
+
+
+div#contents #wrap1 ul li img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    background-size: cover;
+    box-shadow: 1px 1px 2px #fff;
+}
+
+div#contents #wrap1 ul li div#wrap2 {
+    width: 600px;
+    height: 200px;
+    margin-left: 50px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    font-size: 40px;
+    font-family: 'Gaegu', sans-serif;
+    font-weight: bold;
+}
+
+div#contents #wrap1 ul li div#wrap2 p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 160%;
+    text-shadow: 1px 1px 1px rgb(90, 29, 90);
+}
+
+
 
 div#home_bt {
     position: fixed;
@@ -15,6 +90,6 @@ div#home_bt img {
 
 div#home_bt:hover {
     cursor: pointer;
-    filter: drop-shadow(3px 3px 10px lightseagreen);
+    filter: drop-shadow(3px 3px 10px violet);
     transform:translateY(-10px);
 }
