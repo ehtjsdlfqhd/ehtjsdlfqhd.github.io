@@ -1,3 +1,11 @@
+const onLoginSubmit = (event) => {
+    event.preventDefault();
+    console.log(event);
+}; // 작동하지 않는다 ㄱ-
+
+const loginForm = document.querySelector('#login-form');
+loginForm.addEventListener("submit", onLoginSubmit);
+
 document.querySelector("#submit").addEventListener('click', (e) => {
     const idlength = [/^.{6,16}$/]
     const regexps = [/^.{8,12}$/, /[a-z]/i, /[0-9]/, /[!@#$%^&*()]/];
@@ -56,5 +64,6 @@ document.querySelector("#submit").addEventListener('click', (e) => {
         return;
     }
 
-    alert('회원가입에 성공했습니다.😎');
+        alert('회원가입에 성공했습니다.😎');
 });
+
